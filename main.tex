@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage{mtpro2}
+
+\font\hrbfont=mt2hrbt at 10.95pt
+\font\hbifont=mt2hbit at 10.95pt
+\font\bbbfont=mt2bbt at 10.95pt
+\font\bbbifont=mt2bbit at 10.95pt
+\font\hrbdfont=mt2hrbdt at 10.95pt
+\font\bbbdfont=mt2bbdt at 10.95pt
+
+\begin{document}
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cc}
+    \toprule
+      Options & Math Alphabet \\
+    \midrule
+      amsbb & $\mathbb{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ \\
+    \midrule
+      mtphrb & \hrbfont\makecell{ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
+      abcdefghi\symbol{"7B}j\symbol{"7C}klmnopqrstuvwxyz0123456789} \\
+    \midrule
+      mtpbb & \bbbfont\makecell{ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
+      abcdefghi\symbol{"7B}j\symbol{"7C}klmnopqrstuvwxyz0123456789} \\
+    \midrule
+      mtphrd & \hrbdfont\makecell{ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
+      abcdefghi\symbol{"7B}j\symbol{"7C}klmnopqrstuvwxyz0123456789} \\
+    \midrule
+      mtpbbd & \bbbdfont\makecell{ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
+      abcdefghi\symbol{"7B}j\symbol{"7C}klmnopqrstuvwxyz0123456789} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Blackboard Bold Math Alphabet}
+  \label{tab:1}
+\end{table}
+
+\end{document}
